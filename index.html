@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag & Drop API</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="drag.js" defer></script>
+  </head>
+  <body>
+    <div class="board">
+      <form id="todo-form">
+        <input type="text" placeholder="New TODO..." id="todo-input" />
+        <button type="submit">Add +</button>
+      </form>
+
+      <div class="lanes">
+        <div class="swim-lane" id="todo-lane">
+          <h3 class="heading">TODO</h3>
+
+          <p class="task" draggable="true">Die</p>
+          <p class="task" draggable="true">Code homework</p>
+          <p class="task" draggable="true">Sleep</p>
+        </div>
+
+        <div class="swim-lane">
+          <h3 class="heading">In progress</h3>
+
+          <p class="task" draggable="true">Listen Lana Del Rey</p>
+        </div>
+
+        <div class="swim-lane">
+          <h3 class="heading">Done</h3>
+
+          <p class="task" draggable="true">
+            I am lazy haven't done anything
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
